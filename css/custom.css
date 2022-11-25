@@ -1,0 +1,37 @@
+svg.icon {
+   width: 1em; height: 1em;
+   /* width和height定义图标的默认宽度和高度*/
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+#web_bg {
+   /* 背景图像的地址（url括号里）  */
+   background: url(https://s1.ax1x.com/2022/11/25/zYXeII.jpg);
+   /* 背景图像不重复 */
+   background-repeat: no-repeat;
+   /* 背景图像大小 */
+   background-size: cover;
+}
+
+/* 文章页背景 */
+.layout_post>#post {
+   /* 以下代表透明度为0.7 可以自行修改*/
+   background: rgba(255, 255, 255, .7);
+}
+
+/* 所有页面背景 */
+#aside_content .card-widget,
+#recent-posts>.recent-post-item,
+.layout_page>div:first-child:not(.recent-posts),
+.layout_post>#page,
+.layout_post>#post,
+.read-mode .layout_post>#post {
+   /* 以下代表透明度为0.7 */
+   background: rgba(255, 255, 255, .7);
+}
+
+/*侧边卡片的透明度 */
+:root {
+   --card-bg: rgba(255, 255, 255, .7);
+}
